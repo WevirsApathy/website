@@ -1,0 +1,11 @@
+.terms{
+    padding: calc(70px + 5vh) 5vw;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    line-height: 30px;
+}
+.terms h1{
+    display: inline;
+}
