@@ -1,0 +1,67 @@
+#collection{
+    position: relative;
+    min-height: 100vh;
+}
+#collBox{
+    display: flex;
+    padding: 0 7vw;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+#collection::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url(bricks.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(4px);   
+    height: 100%;
+    width: 100vw;
+    z-index: -1;
+}
+#collText1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3.5vw;
+    gap: 2vw;
+}
+#collText2{
+    display: flex; 
+    width: 100%;
+    padding: 3vw;
+}
+#collText3{
+    display: flex;
+    width: 100%;
+    padding: 3vw;
+    justify-content: end;
+    text-align: end;
+}
+#collText4{
+    display: flex;
+    width: 100%;
+    padding: 3vw 3vw 7vw 3vw;
+}
+.collTextBox{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 1vw;
+}
+@media only screen and (max-width: 506px){
+    .collTextBox{
+        display: flex;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 506px) and (max-width: 800px){
+    .collTextBox{
+        width: 80%;
+    }
+}

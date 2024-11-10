@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wevirs Apathy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/sHome.css">
+    <link rel="stylesheet" href="css/sColl.css">
+    <link rel="stylesheet" href="css/sStory.css">
+    <link rel="stylesheet" href="css/sfooter.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+    <div id="nav">
+        <div id="navLogoText">
+            <div id="navLogoTextBox">
+                <div id="navLogo1">
+                    <a>Wevirs Apathy</a>
+                </div>
+                <div id="navLogo2">
+                    <button id="navButton" href="button"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="40px" height="40px" fill-rule="nonzero"><g fill="#f0f0f0" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M6,22h36v4h-36zM6,10h36v4h-36zM6,34h36v4h-36z"></path></g></g></svg></button>
+                </div>
+            </div>
+        </div>
+        <div id="navLink">
+            <div id="navLinkBox">
+                <a href="#home" onclick="showContent('home')">Home</a>
+                <a href="#collection" onclick="showContent('collection')">Collection</a>
+                <a href="#story" onclick="showContent('story')">Story</a>
+            </div>
+        </div>
+        <div id="navOtherLink">
+            <div id="navOtherLinkBox">
+                <a href="https://x.com/ethwenry"><svg xmlns="http://www.w3.org/2000/svg"  fill="rgb(205, 205, 205)" viewBox="0 0 30 30" width="30px" height="30px"><path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path fill="rgb(205, 205, 205)" d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167 46 4 36.609825 4 25 C 4 13.390175 13.390167 4 25 4 z M 25.984375 10.986328 A 1.0001 1.0001 0 0 0 25 12 L 25 13.054688 C 24.055482 12.681347 22.421875 12.09375 22.421875 12.09375 A 1.0001 1.0001 0 0 0 21.240234 13.650391 C 21.240234 13.650391 22.617038 15.265178 23.425781 17.691406 C 24.234524 20.117635 24.483946 23.20021 22.185547 26.417969 A 1.0001 1.0001 0 0 0 23 28 L 25 28 L 25 30 L 22 30 C 20.883334 30 20 29.116666 20 28 A 1.0001 1.0001 0 0 0 19 27 L 11 27 A 1.0001 1.0001 0 0 0 10.023438 28.216797 L 10.333984 29.613281 C 11.421423 34.507308 15.773061 38 20.787109 38 L 28.910156 38 C 32.375832 38 35.462701 35.775961 36.558594 32.488281 C 36.724857 31.989493 37.081901 31.577214 37.552734 31.341797 L 40.447266 29.894531 A 1.0001 1.0001 0 0 0 41 29 L 41 27 A 1.0001 1.0001 0 0 0 39.724609 26.039062 L 32.724609 28.039062 A 1.0001 1.0001 0 0 0 32.445312 28.167969 L 30.076172 29.748047 C 29.82962 29.912415 29.539155 30 29.242188 30 L 27 30 L 27 28 L 30 28 A 1.0001 1.0001 0 0 0 30.574219 27.818359 C 30.574219 27.818359 32.84152 26.301375 33.587891 23.654297 C 33.961076 22.330758 33.899812 20.693659 32.984375 19.035156 C 32.068938 17.376654 30.359452 15.700268 27.509766 14.007812 A 1.0001 1.0001 0 0 0 27.296875 13.912109 C 27.117721 13.85633 27.171477 13.856266 27 13.800781 L 27 12 A 1.0001 1.0001 0 0 0 25.984375 10.986328 z M 18.996094 14 A 1.0001 1.0001 0 0 0 18.142578 14.486328 L 12.142578 24.486328 A 1.0001 1.0001 0 0 0 13 26 L 20 26 A 1.0001 1.0001 0 0 0 20.857422 25.513672 C 20.857422 25.513672 24.136768 19.819397 19.78125 14.375 A 1.0001 1.0001 0 0 0 18.996094 14 z M 24.302734 14.923828 C 25.127592 15.250025 25.230851 15.344863 26.535156 15.759766 C 29.148489 17.320921 30.560983 18.781964 31.234375 20.001953 C 31.912688 21.230857 31.913924 22.218242 31.662109 23.111328 C 31.211365 24.70994 29.917488 25.766609 29.621094 26 L 24.652344 26 C 26.309158 22.731952 26.134598 19.489732 25.324219 17.058594 C 25.029979 16.175876 24.659832 15.594273 24.302734 14.923828 z M 18.939453 17.042969 C 20.855069 20.622664 19.637075 23.407915 19.304688 24 L 14.765625 24 L 18.939453 17.042969 z M 39 28.326172 L 39 28.382812 L 36.658203 29.552734 C 35.713037 30.025318 34.993893 30.854257 34.660156 31.855469 C 33.834049 34.333789 31.522481 36 28.910156 36 L 20.787109 36 C 16.699158 36 13.17367 33.16966 12.287109 29.179688 L 12.248047 29 L 18.203125 29 C 18.659479 30.706363 20.156406 32 22 32 L 29.242188 32 C 29.933218 32 30.610099 31.795741 31.185547 31.412109 L 33.425781 29.917969 L 39 28.326172 z"/></svg></a>
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path fill="rgb(205, 205, 205)" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg></a>
+            </div>
+        </div>
+    </div>
+    <div id="mobNav">
+        <div id="mobNavLink">
+            <a href="#home" onclick="showContent('home')">Home</a>
+            <a href="#collection" onclick="showContent('collection')">Collection</a>
+            <a href="#story" onclick="showContent('story')">Story</a>
+        </div>
+        <div id="mobNavOtherLink">
+            <a href="https://x.com/ethwenry"><svg xmlns="http://www.w3.org/2000/svg"  fill="rgb(205, 205, 205)" viewBox="0 0 30 30" width="30px" height="30px"><path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path fill="rgb(205, 205, 205)" d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167 46 4 36.609825 4 25 C 4 13.390175 13.390167 4 25 4 z M 25.984375 10.986328 A 1.0001 1.0001 0 0 0 25 12 L 25 13.054688 C 24.055482 12.681347 22.421875 12.09375 22.421875 12.09375 A 1.0001 1.0001 0 0 0 21.240234 13.650391 C 21.240234 13.650391 22.617038 15.265178 23.425781 17.691406 C 24.234524 20.117635 24.483946 23.20021 22.185547 26.417969 A 1.0001 1.0001 0 0 0 23 28 L 25 28 L 25 30 L 22 30 C 20.883334 30 20 29.116666 20 28 A 1.0001 1.0001 0 0 0 19 27 L 11 27 A 1.0001 1.0001 0 0 0 10.023438 28.216797 L 10.333984 29.613281 C 11.421423 34.507308 15.773061 38 20.787109 38 L 28.910156 38 C 32.375832 38 35.462701 35.775961 36.558594 32.488281 C 36.724857 31.989493 37.081901 31.577214 37.552734 31.341797 L 40.447266 29.894531 A 1.0001 1.0001 0 0 0 41 29 L 41 27 A 1.0001 1.0001 0 0 0 39.724609 26.039062 L 32.724609 28.039062 A 1.0001 1.0001 0 0 0 32.445312 28.167969 L 30.076172 29.748047 C 29.82962 29.912415 29.539155 30 29.242188 30 L 27 30 L 27 28 L 30 28 A 1.0001 1.0001 0 0 0 30.574219 27.818359 C 30.574219 27.818359 32.84152 26.301375 33.587891 23.654297 C 33.961076 22.330758 33.899812 20.693659 32.984375 19.035156 C 32.068938 17.376654 30.359452 15.700268 27.509766 14.007812 A 1.0001 1.0001 0 0 0 27.296875 13.912109 C 27.117721 13.85633 27.171477 13.856266 27 13.800781 L 27 12 A 1.0001 1.0001 0 0 0 25.984375 10.986328 z M 18.996094 14 A 1.0001 1.0001 0 0 0 18.142578 14.486328 L 12.142578 24.486328 A 1.0001 1.0001 0 0 0 13 26 L 20 26 A 1.0001 1.0001 0 0 0 20.857422 25.513672 C 20.857422 25.513672 24.136768 19.819397 19.78125 14.375 A 1.0001 1.0001 0 0 0 18.996094 14 z M 24.302734 14.923828 C 25.127592 15.250025 25.230851 15.344863 26.535156 15.759766 C 29.148489 17.320921 30.560983 18.781964 31.234375 20.001953 C 31.912688 21.230857 31.913924 22.218242 31.662109 23.111328 C 31.211365 24.70994 29.917488 25.766609 29.621094 26 L 24.652344 26 C 26.309158 22.731952 26.134598 19.489732 25.324219 17.058594 C 25.029979 16.175876 24.659832 15.594273 24.302734 14.923828 z M 18.939453 17.042969 C 20.855069 20.622664 19.637075 23.407915 19.304688 24 L 14.765625 24 L 18.939453 17.042969 z M 39 28.326172 L 39 28.382812 L 36.658203 29.552734 C 35.713037 30.025318 34.993893 30.854257 34.660156 31.855469 C 33.834049 34.333789 31.522481 36 28.910156 36 L 20.787109 36 C 16.699158 36 13.17367 33.16966 12.287109 29.179688 L 12.248047 29 L 18.203125 29 C 18.659479 30.706363 20.156406 32 22 32 L 29.242188 32 C 29.933218 32 30.610099 31.795741 31.185547 31.412109 L 33.425781 29.917969 L 39 28.326172 z"/></svg></a>
+            <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path fill="rgb(205, 205, 205)" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg></a>
+        </div>
+    </div>
+    <div id="home" class="content">
+        <div id="homeFirst">
+            <div id="homeLogo">
+                <p>Wevirs -&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;- Apathy</p>
+            </div>
+        </div>
+        <div id="homeBox">
+            <div id="homeSecond">
+                <div id="homeText1Title">
+                    <p class="tempFont titleFont">- Introduction -</p>
+                </div>
+                <div id="homeText1">
+                    <p class="tempFont">
+                        Wevirs Apathy is a PFP-style NFT collection, consisting of 10,000 unique tokens minted on the Polygon 
+                        blockchain through secure and reliable smart contracts.
+                        <br><br><br>
+                        This collection was crafted to share our unique artistic approach with the NFT community, featuring technology, 
+                        art, and sci-fi elements in each piece. Made for those who are attracted to futuristic themes and innovative digital art.
+                    </p>
+                </div>
+                <div id="homeImg">
+                    <div><img src="img/img1.png" alt="img1"></div>
+                    <div><img src="img/img2.png" alt="img2"></div>
+                    <div><img src="img/img3.png" alt="img3"></div>
+                </div>
+                <div id="homeText2">
+                    <p class="tempFont">
+                        What makes Wevirs Apathy so special is the use of additional details of common elements, turning them into special elements. 
+                        These reinterpretations make each piece even more unique, offering an alternative and fantastic view, which invites the viewer
+                         to see things in a new way.
+                        <br><br><br>
+                        The project was conceived in 2022, but in May 2024, it was taken seriously thanks to the contribution of a second person who 
+                        improved its aesthetics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="collection" class="content">
+        <div id="collBox">
+            <div id="collText1">
+                <p class="tempFont titleFont">- Style -</p>
+                <div>
+                    <p class="tempFont">
+                        As we mentioned before, the collection has a unique style, characterized by details largely derived by creative and 
+                        imaginative abilities, in fact, it is rare to find elements that coincide with something real and common, or, if they 
+                        are present, they undergo significant modification to better adapt to the overall style.
+                    </p>
+                </div>
+            </div>
+            <div id="collText2">
+                <div class="collTextBox">
+                    <div><h1 class="tempFont" style="color: #108882;">Indifferent Robots</h1></div>
+                    <p class="tempFont">
+                        The characters in the collection are robots called Wevirs with whom they show no interest in anything, 
+                        coinciding with the character of apathy that marks one of the most important aspects of the collection.
+                    </p>
+                </div>
+            </div>
+            <div id="collText3">
+                <div class="collTextBox">
+                    <div><h1 class="tempFont" style="color: #108882;">Minerals</h1></div>
+                    <p class="tempFont">
+                        Another feature of the collection is the material constitution of the body: each color is associated 
+                        with a different type of mineral, which are actually existing on planet earth.
+                    </p>
+                </div>
+            </div>
+            <div id="collText4">
+                <div class="collTextBox">
+                    <div><h1 class="tempFont" style="color: #108882;">Layers</h1></div>
+                    <p class="tempFont">
+                        Wevirs Apathy was generated by a total of 112 layers,<br>
+                        each with a different rarity:<br><br>
+                        - 35 Hats <br>
+                        - 11 Mouths <br>
+                        - 32 Bodies <br>
+                        - 30 Eyes <br>
+                        - 4 Backgrounds
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="story" class="content">
+        <div id="storyBox">
+            <p class="tempFont titleFont">- Story -</p>
+            <div>
+                <p class="tempFont">
+                    On the planet NHeras-27, there lived unique beings known as Wevirs, who inhabited vast mountain caves and thrived in harmony with their environment. 
+                    They drew sustenance by absorbing energy from the minerals embedded in the rocks, transforming this energy into life force.  <br><br>
+                    Over time, each Wevir developed a preference for a specific mineral, which gradually shaped their physical forms to resemble 
+                    the minerals they relied on, making each one uniquely valuable and distinct. <br><br>
+                    Their story is entwined with an ancient mystery: during an exploratory mission, humans accidentally left behind some robots on the planet.
+                    Equipped with advanced AI, these abandoned robots eventually learned to replicate themselves, using the planet's resources to create new 
+                    beings in their image.  <br><br>
+                    However, these replicas, like their predecessors, were not programmed to feel emotions, leading to the emergence of a 
+                    society defined by an overwhelming sense of apathy. <br><br>
+                    Will they ever remember their abandonment?<br> And if not, might they one day discover it?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="content">
+        <div class="final">
+            <div class="finalMember">
+                <div>
+                    <h3>Members</h3>
+                    <p>Owner: <a href="https://x.com/ethwenry">@Wenry</a></p>
+                    <p>Helper: <a href="https://x.com/_zodd99">@Zod</a></p>
+                </div>
+            </div>
+            <div class="finalIcon">
+                <div>
+                    <a href="https://x.com/ethwenry"><svg xmlns="http://www.w3.org/2000/svg"  fill="rgb(205, 205, 205)" viewBox="0 0 30 30" width="35px" height="35px"><path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"/></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="35px" height="35px"><path fill="rgb(205, 205, 205)" d="M 25 2 C 12.309288 2 2 12.309297 2 25 C 2 37.690703 12.309288 48 25 48 C 37.690712 48 48 37.690703 48 25 C 48 12.309297 37.690712 2 25 2 z M 25 4 C 36.609833 4 46 13.390175 46 25 C 46 36.609825 36.609833 46 25 46 C 13.390167 46 4 36.609825 4 25 C 4 13.390175 13.390167 4 25 4 z M 25.984375 10.986328 A 1.0001 1.0001 0 0 0 25 12 L 25 13.054688 C 24.055482 12.681347 22.421875 12.09375 22.421875 12.09375 A 1.0001 1.0001 0 0 0 21.240234 13.650391 C 21.240234 13.650391 22.617038 15.265178 23.425781 17.691406 C 24.234524 20.117635 24.483946 23.20021 22.185547 26.417969 A 1.0001 1.0001 0 0 0 23 28 L 25 28 L 25 30 L 22 30 C 20.883334 30 20 29.116666 20 28 A 1.0001 1.0001 0 0 0 19 27 L 11 27 A 1.0001 1.0001 0 0 0 10.023438 28.216797 L 10.333984 29.613281 C 11.421423 34.507308 15.773061 38 20.787109 38 L 28.910156 38 C 32.375832 38 35.462701 35.775961 36.558594 32.488281 C 36.724857 31.989493 37.081901 31.577214 37.552734 31.341797 L 40.447266 29.894531 A 1.0001 1.0001 0 0 0 41 29 L 41 27 A 1.0001 1.0001 0 0 0 39.724609 26.039062 L 32.724609 28.039062 A 1.0001 1.0001 0 0 0 32.445312 28.167969 L 30.076172 29.748047 C 29.82962 29.912415 29.539155 30 29.242188 30 L 27 30 L 27 28 L 30 28 A 1.0001 1.0001 0 0 0 30.574219 27.818359 C 30.574219 27.818359 32.84152 26.301375 33.587891 23.654297 C 33.961076 22.330758 33.899812 20.693659 32.984375 19.035156 C 32.068938 17.376654 30.359452 15.700268 27.509766 14.007812 A 1.0001 1.0001 0 0 0 27.296875 13.912109 C 27.117721 13.85633 27.171477 13.856266 27 13.800781 L 27 12 A 1.0001 1.0001 0 0 0 25.984375 10.986328 z M 18.996094 14 A 1.0001 1.0001 0 0 0 18.142578 14.486328 L 12.142578 24.486328 A 1.0001 1.0001 0 0 0 13 26 L 20 26 A 1.0001 1.0001 0 0 0 20.857422 25.513672 C 20.857422 25.513672 24.136768 19.819397 19.78125 14.375 A 1.0001 1.0001 0 0 0 18.996094 14 z M 24.302734 14.923828 C 25.127592 15.250025 25.230851 15.344863 26.535156 15.759766 C 29.148489 17.320921 30.560983 18.781964 31.234375 20.001953 C 31.912688 21.230857 31.913924 22.218242 31.662109 23.111328 C 31.211365 24.70994 29.917488 25.766609 29.621094 26 L 24.652344 26 C 26.309158 22.731952 26.134598 19.489732 25.324219 17.058594 C 25.029979 16.175876 24.659832 15.594273 24.302734 14.923828 z M 18.939453 17.042969 C 20.855069 20.622664 19.637075 23.407915 19.304688 24 L 14.765625 24 L 18.939453 17.042969 z M 39 28.326172 L 39 28.382812 L 36.658203 29.552734 C 35.713037 30.025318 34.993893 30.854257 34.660156 31.855469 C 33.834049 34.333789 31.522481 36 28.910156 36 L 20.787109 36 C 16.699158 36 13.17367 33.16966 12.287109 29.179688 L 12.248047 29 L 18.203125 29 C 18.659479 30.706363 20.156406 32 22 32 L 29.242188 32 C 29.933218 32 30.610099 31.795741 31.185547 31.412109 L 33.425781 29.917969 L 39 28.326172 z"/></svg></a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="35px" height="35px"><path fill="rgb(205, 205, 205)" d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"/></svg></a>
+                </div>
+                <p>wenry.business@gmail.com</p>
+            </div>
+            <div class="finalService">
+                <div>
+                    <h3>Company</h3>
+                    <a href="#"><p>Service Terms</p></a>
+                    <a href="#"><p>Privacy Policy</p></a>
+                    <a href="#"><p>Cookie Policy</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="develop">
+            <p>Copyright ©2024; developed by Wenry</p>
+        </div>
+    </div>
+</body>
+</html>

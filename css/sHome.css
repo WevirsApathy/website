@@ -1,0 +1,325 @@
+#nav{
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #131313;
+    padding: 10px 20px;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: -5px 5px 5px #000000;
+}
+#nav a{
+    font-family: 'devin chavez font';
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+#navLogoText,
+#navOtherLink{
+    width: 20%;
+}
+#navLink{
+    width: 60%;
+}
+#navLogo1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#navLogo2{
+    display: none;
+}
+#navLinkBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px
+}
+#navLinkBox a{
+    padding: 9px 19px;
+}
+#navOtherLinkBox{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#navLinkBox a:hover, 
+#navLinkBox a.active{
+    background-color: #0f635f;
+    color: black;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px black;
+}
+#navOtherLinkBox{
+    gap: 8px;
+    display: flex;
+    justify-content: flex-end;
+}
+#navOtherLinkBox a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+#mobNav{
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #131313;
+    box-shadow: -5px 0px 5px #000000;
+    z-index: 1;
+    display: none;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 20px;
+}
+#mobNav.visible{
+    display: flex;
+}
+#mobNav a{
+    font-family: 'devin chavez font';
+    text-decoration: none;
+    color: rgb(240, 240, 240);
+}
+#mobNavLink{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding: 30px;
+    gap: 30px;
+}
+#mobNavOtherLink{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#navButton{
+    background: initial;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+#homeBox{
+    display: flex;
+    padding: 0 18vw
+}
+#homeSecond{
+    background-color: #131313;
+}
+#homeFirst{
+    background-image: url(bricks.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#homeLogo{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 10vh;
+    font-family: 'devin chavez font';
+    font-size: 80px;
+    color: rgb(240, 240, 240);
+    font-weight: bolder;
+}
+
+#homeText1Title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw 0 2.5vw 0;
+}
+
+#homeText1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 7%;
+}
+#homeText2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7% 0%;
+}
+#homeImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 1vw;
+    flex-wrap: wrap;
+}
+#homeImg div{
+    box-shadow: 7px 7px 7px rgb(0, 0, 0);
+    flex-shrink: 0;
+}
+#homeImg div:nth-child(1),
+#homeImg div:nth-child(3){
+    display: flex;
+    width: 190px;
+    height: 190px;
+}
+#homeImg div:nth-child(2){
+    display: flex;
+    width: 250px;
+    height: 250px;
+}
+
+
+
+@media only screen and (max-width: 506px){
+    #homeBox{
+        display: flex;
+        padding: 0 10vw;
+    }
+    #homeFirst{
+        height: 22vh;
+    }
+    #homeLogo{
+        min-height: 22vh;
+        font-size: 18px;
+        bottom: 0;
+    }
+    #homeImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4vw;
+    }
+    #homeImg div:nth-child(1){
+        display: none;
+    }
+    #homeImg div:nth-child(3){
+        display: none;
+    }
+    #homeImg div:nth-child(2){
+        display: flex;
+        width: 150px;
+        height: 150px;
+    }
+    #navLogoTextBox a:last-child{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    #navLink,
+    #navOtherLink{
+        display: none;
+    }
+    #navLogoText{
+        width: 100%;
+    }
+    #navLogo2{
+        display: flex;
+        width: 50%;
+        justify-content: end;
+    }
+    #navLogoTextBox{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #navLogo1{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 506px) and (max-width: 800px){
+    #homeBox{
+        display: flex;
+        padding: 0 10vw;
+    }
+    #homeFirst{
+        height: 30vh;
+    }
+    #homeLogo{
+        min-height: 30vh;
+        font-size: 25px;
+        bottom: 0;
+    }
+    #homeImg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4vw;
+    }
+    #homeImg div:nth-child(1){
+        display: none;
+    }
+    #homeImg div:nth-child(3){
+        width: 130px;
+        height: 130px;
+    }
+    #homeImg div:nth-child(2){
+        display: flex;
+        width: 180px;
+        height: 180px;
+    }
+    #navLogoTextBox a:last-child{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    #navLink,
+    #navOtherLink{
+        display: none;
+    }
+    #navLogoText{
+        width: 100%;
+    }
+    #navLogo2{
+        display: flex;
+        width: 50%;
+        justify-content: end;
+    }
+    #navLogoTextBox{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #navLogo1{
+        width: 50%;
+    }
+
+}
+@media only screen and (min-width: 800px) and (max-width: 1200px){
+    #homeBox{
+        padding: 0 12vw;
+    }
+    #homeFirst{
+        height: 40vh;
+    }
+    #homeLogo{
+        min-height: 40vh;
+        font-size: 40px;
+        bottom: 0;
+    }
+    #homeImg div:nth-child(1),
+    #homeImg div:nth-child(3){
+        width: 160px;
+        height: 160px;
+    }
+    #homeImg div:nth-child(2){
+        width: 210px;
+        height: 210px;
+    }
+}

@@ -1,0 +1,18 @@
+#story{
+    min-height: 100vh
+}
+#storyBox{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 4vw 16vw 7vh;
+    gap: 3vw;
+}
+@media only screen and (max-width: 800px){
+    #storyBox{
+        padding: 4vw 10vw 7vh;;
+    }
+}
