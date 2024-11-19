@@ -22,11 +22,11 @@
     border-top: 2px solid rgb(140, 140, 140);
     border-left: 2px solid rgb(140, 140, 140);
     box-shadow: 3px 3px 3px black;
-    background-color: #131313;
+    background-color: #181818;
 }
 body{
     margin: 0;
-    background-color: 181818;
+    background-color: #181818;
 }
 #pageFinal{
     height: 40vh;
