@@ -22,8 +22,6 @@
 #navLink{
     width: 60%;
 }
-#navlink a:last-child{
-    display: none;
 #navLogo1{
     display: flex;
     justify-content: start;
