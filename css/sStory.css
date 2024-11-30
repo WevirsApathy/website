@@ -1,5 +1,6 @@
 #story{
     min-height: 100vh;
+    display: none;
 }
 #storyBox{
     display: flex;
